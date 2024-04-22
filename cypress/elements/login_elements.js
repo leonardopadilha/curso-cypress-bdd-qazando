@@ -8,6 +8,11 @@ const elemLogin = {
     },
     mensagem: {
         erro: '.invalid_input'
+    },
+    modal: {
+        successCheck: '.swal2-success div:nth-child(4)',
+        successMessage: '#swal2-title',
+        welcomeMessage: '#swal2-html-container'
     }
 }
 
