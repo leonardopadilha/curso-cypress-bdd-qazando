@@ -6,10 +6,23 @@ Given("I am on login screen", () => {
     home_page.acessarLoginoUsuario();
 });
 
+Given('fill e-mail', () => {
+    login_page.preencherEmail("teste@teste.com")
+});
+
+Given('fill my credencials', () => {
+    login_page.preencherEmail('teste@teste.com')
+    login_page.preencherSenha('111111')
+});
+
 When("I click on login", () => {
     login_page.clickOnLogin()
 });
 
 Then("I see the message {string}", (message) => {
     login_page.validarMensagemErro(message);
+});
+
+Then('I see success message', () => {
+    login_page.validarModalLoginComSucesso('Login realizado', 'teste@teste.com')
 });
