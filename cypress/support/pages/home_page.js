@@ -10,5 +10,13 @@ export default {
         cy.get(elements.link.login)
             .should('be.visible')
             .click()
+    },
+    acessarCadastrarUsuario() {
+        cy.visit('')
+            .get(elements.link.topo_site)
+
+        cy.get(elements.link.register)
+            .should('be.visible')
+            .click()
     }
 }
