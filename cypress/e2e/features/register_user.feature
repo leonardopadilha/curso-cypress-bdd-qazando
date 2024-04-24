@@ -7,7 +7,7 @@ Background: Access register screen
 
 Scenario: Campo nome vazio
     When I click on Register
-    Then I see message "E-mail inválido" on register
+    Then I see message "O campo nome deve ser prenchido" on register
 
 Scenario: Campo e-mail vazio
     And I fill name
