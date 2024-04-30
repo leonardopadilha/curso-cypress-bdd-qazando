@@ -12,13 +12,13 @@ Scenario: Campo nome vazio
 Scenario: Campo e-mail vazio
     And I fill name
     When I click on Register
-    Then I see message "O campo e-mail deve ser preenchido corretamente" on register
+    Then I see message "O campo e-mail deve ser prenchido corretamente" on register
 
 Scenario: Campo e-mail inválido
     And I fill name
     And I fill email "invalidEmail"
     When I click on Register
-    Then I see message "O campo e-mail deve ser preenchido corretamente" on register
+    Then I see message "O campo e-mail deve ser prenchido corretamente" on register
 
 Scenario: Campo senha vazio
     And I fill name
