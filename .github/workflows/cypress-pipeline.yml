@@ -17,7 +17,7 @@ jobs:
     steps:
     #clone do projeto
       - name: Checkout/Clone do projeto
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # exemplo de execução no terminal
       - name: instalar dependencias do projeto
